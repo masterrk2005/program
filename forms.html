@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravikiran</title>
+    <style>
+        body {
+            text-align:center;
+        }
+        #dob { 
+          border:2px solid;
+        }
+        input {
+            width:250px;
+            height:25px;
+            background-color:aliceblue;
+            border-radius:5px;
+
+        }
+        img {
+            width:200px;
+            height:120px;
+        }
+        h4 {
+            font-size:30px;
+        }
+        #village {
+            width:255px;
+            height:32px;
+            background-color:aliceblue;
+            border-radius:5px;
+            border:2px solid;
+          
+        }
+        .hover-button {
+      width: 250px;
+      height: 32px;
+      border: 2px solid;
+      background-color: deepskyblue;
+      transition: background-color 0.3s ease;
+      border-radius:3px;
+      transform:scale(1.0);
+    }
+
+    .hover-button:hover {
+      background-color: lightblue;
+      transform:scale(1.2);
+    }
+    </style>
+</head>
+<body>
+    <header>
+       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAA81BMVEX///8Ahvj/QTH/vQAAqksAf/gAgvil1rQApkAApDnf7+QAhPgAfPj/uwC+2Pz/uADS5P3/PSwAevj/OCb/NiP/KxPe6vtbo/mw2rz/Mh3/IwC30/z/Lxn/KA3+3KDw9v54sPmEtvrt9P7+cWb+4uClyfuPvPrK3vybw/odi/hGmfhKm/j/pZ7+5r/+rKb+7Or+xcH+yFf+vbj+job+mZL+2dX+e3Fzrfowkfjb6f3+4K/+7dP+zcn/9/b+9Ob+1Yz+UkP+XlH+al/+z3X+xUj+9uv+sq3+TDsAniL9y2b+15D+hn3+eXD+vyX+0n/+wzn+6clqcGItAAANgUlEQVR4nO1de1/aShMW+iY9PQliCJA3QARUkIsVFAT0SAvY6rF46ff/NIdcyM5eE2pqi93nj/4KySbDs7OzszOz686OhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISExJ+J6nG5Va+Nx7V6q3x88Kul+Y1RbFiqrihqAEXRlW5z71dL9Tui2GzripYioK3Yqx3/atl+HH+HSPChux1dJYlaQ9VTrQRf9Zp4/++HAP8mxtZum9YpDIreTOpdr4r3f/0vwIeEyLqc6EKmfPVSGsm87VWROFm1nFirQu2aFBN532siYbIuU1xbRULLbZ3pSpasRi4uVZ5ydV/+xldFomSNmdZK01ZelsYanGq7msBPeD0kSVZXoXhSdL1tjesrJ76j6Qo1RDUtgZ/wekiQrIlKMWU1LtH16vHKUcXvyW2XQ58cWR2cB03vlOmbinUFqF9uy5z5xMiycK70Lk9pWqq6pVwlRlYds1dqSsRDzZ8zc7sveeGvQEJk7WLzoF4T373nemM5xij9zZEMWQc4V9EqYylbyFVCZHWAF6WpcdYx4z92bdiABkt7uwHRJMiqQq6Ut8tVImTVgNewZW7mZkiArAOwela2LpKwCRIga4wUS9u2OMJmeDlZVaBY+hs2WDtJkNVEiqVuZ2g9Nl5OFpwJk5Xtt8OLydrT/xjFejlZdTQKcz8h7nl0fjJYjpaDk/5R/EafPu4/3dzf33y7+id+o8ty060zaJb5C5BIsqbXp4PRw8NyeM6WFrjuVnzJYmF6e+gU7LzpIm8XnIfzaYxWH2+y2cwa2ezz/qcYjXYtRVfc4LeqKrpW9/kqhgi0QExW72TmVFbSGoYrrT24oO4AS2gl2aXx0ahkG2kIwy4tI/Rr+nlF1DuIFWFfPka8qqXiWWE1Z7nT+kQPsF70i8i6OCzlMXHNwuyauKeMljp6kqOw91Ay0zRM57AnaLWi6h2NTPbxu6BRQ6FyBykt1wDhASUIo/DJmj44BiWsUZjjwgKTNfkhVtg4ZVLlSVAa8hp9z7Co8uk64zWqTmiqvK4fb0BWv8AW1yjdwtu6of6qtZewg2NR4VDlwp6xTdfnLIcqny62ch1zyzIUqxP+N4KsocMV1lmC+8DDE4tQ9dI8tQr6y2ZZrjOeWgXI7jMalQVZYcRiBFkjYdceohuBfReE3S/3IgG4ytPDn0CJnmm+RHDFZEvEFVQyIVkjWyirPVrfWEVk6YIAaVdXIpALW08NkiuD+ibtkLpF6xVtwLJXRKNjiitm4lxM1gmhVys3x8TkLZwEdwLPQTQZWpGVNUgv59gYNGzHns3npoO7EYaJv+BzBucpm3388rz6Fycsi/uoeOYgtfKw2pNJilGwKCLrooQxVTBGw+FggYm7HgdFQBafqzhkrS3eECq14SzO/dl32n9wIIvmIXz+d8y2Zx/Xjuj3J5yuLCZVG0qlKnXfFFR3LZ0QV0SWiYk7WGt8f4Z+h2EkTJbaYnRUYQFHW+8BTjqFc3AJMpJ5h/mg3yBdmXtwpQl8Bg2rRTwgqjYEZA3zSKQK5gOeImnzvreT2DBU6/6dM6C+zjnxmH4BXM2j7+EgzN4QjT49wqtoIMIAr9omAnF47RSfrCno29IpIS1iq+Q5O9DACwJ/MciqBXQA3aGnvCMwRu1Qtq9gELIchGfEVuZL+C0I8Kodqs0xtGd8sgZoFJb65DNOQ2nNgfcFcB0EqYrYZAHFYrgHK7bASAxVCyhW5hvr9UC3QtUCiqWx1h5lwBafLCRO4ZZ+Buh47zPw3ATr6LhkXSDFqpwyn3QO7lh3JVKsDHtVA1Qvsx6lYJ3GNiBA87hknSPdGVEPuL1DPW97VILljiD0F9dmIa025pxHLQxSvo9AbzgxnH1wS/AVoIKz9IhB1mEojE00Phpg3oORdr9EHSQKZ3VzOhuILI9qZJIYBiuQAmi+/819yAR7ELqgxiEI8KY4bVpqJFmhec/j46A/d4gVW8EN14AQzY9E4EORve49CseYMeM2QapV8QnNRioWVK2AUJRm4ac69SiyLkLnvQTe3DvJV4glh1Ex3Zm9GM/Cc3CJy3MbalaeYS4DIDvhG4JPIVkci+XiK3kTKmXhuzxWVIgmlNdALvLFQymPM5U2nUVgXpE1WrtKGwDppbeyRCarwA/x9cJx6E/IyGRlyLUfwCMy8d5n1Mf8MFxY78IjK5Q3HIW3dwVSqezKMPwxoNBBjUUQBLJ4nv8PRpigEZoEFu5HNMKygvTEDbrL/YicaUEX70WRFdp329Mcwqj7SjWDnvUuMFobB+EneP+Gcy13LnQRUuobtidEgyCfASj9CnkQheFCj5tH1nwtSeWaZdSNvLMk5imwjNo0sAz6t+Z+RjrzIGi1RLe5Hwmd4eAK3eUuso8RWYIejiLrDplYhlEvpE+p3qvR/khckJNzaBnNpaAVsmxenOY+FlkfcbLQeBDJHEUWYiZPGvV86ZDM7bgowlWUiBoaqJ0/JYV9Y9D+MELCmvUCsu7SbBi2PeTMUF2w5NloQkRzYVCqNItls0Kzaty5H19qs14wDOfM+LfpzMlwCQJ0hjcq/EPNAon5qwcI1IEbzIZPuP6h4SBYpRWjyDpk5AptFABkAqhWSo2faW1Szn8sP2uK/CzPssX0s4jBGsYcBKu0cmw/K5SocMf3pn0UQaSMGe5g4hK1Wvs6yIO3+YrcR26+5woCD/6e22hKevBtsqMYCKeuSA8+kKc04q1oWU9NMQNpTFRh1W4QNwRrwwW34aFgbchtRK0Na9QqmUbkQvoCJHZWy7+TOHUrMJoRmy2QLUC5bDQBU7muNXookOv436DpMMPKo3p4hwj1DRs1udCg3Qsq6oAiIMaCCpTygCXgqIA2Awcg3wuWsgNiKcPAiPJcQTwrw2l0RcWzQCWszpmUJlokWWBGYnlVLhjahm0K0yKdU6zCAMRIQKS0wO6pa9SZrEgpma0IBGbcAeKRbWYjsG0kRqQ0bbB/6YDFYgeLheqWcFKsQT8WmxJAJJY5IfaASQ1j8E9Ab5gT4jMjBg8yEuqY0aYYKwaPOpcRV97xMjwOYzWSwtjSBGeCNFRsHyeWFeojk2kYNFvTNAhrs7M7jMK1M2Z2pw3IoIWtwp/DJwukDcMsPcC1a2DzJqVcB8QOaVWps0xXtaXhCUxiiyZQLcMmJ+ILk503BKpF58Kmz/Aq8lvhFkmd1K2iFo+sKcg2OVTh2G0wGdHKVSSLwlR90rrEbrlsUAf66ERQ9wJmnUsD7NoQy1ZDTwxm77NfsCLSK25GGvOl25iVb+IVI4KM9AmwC5UFNhZ6h+EgNSnlKqpkDsc9AapTa5VXaDTHHZ2uudCpxeQSrt/NQljGejSsYFew2fIjZCuTvV+Pxa/7eC0NNltWsboQvbtW8QNS+YW1Dncwh1NahqRcj0rYFdKmHLQZZ6u49b8uVIpKJlf421ekVAqL5WC5sIlCRBufkm9wTjLZ5/unm7MMWUWDV/+VMbY0RZ+MazUrRZ9mJSLrCK+iqTjz0WAwmjkVTF46Xc06BkMI5mk0PbKOzjBNk1yxlkif9Rmn5Z1X2I1/RZuzOiGuW9nNynAK67POS7S4pLwOw/jv7LQ2OIxG09m1gkfE2xko0c7LI0kNhewT1Wgcr3PFlX8n/IrSNVecmuHLdlzlUiY8X+yIjNCSqsbgitYtiqvPjEbs03OCzoz24AO2Inq3xNQrDy3+CXYAwtPGendklBbCNNnrxjNxtTI7ftPkDgVl3I3KG67RLwl612DZqxDVeiRdaq4mjnsNuK83HG4y44q5ZcDn6pG3KeVYZQurWBvUwfdm3CJceyba5eDRpQhO/VtNO7XIpfbFjDkWjUqat2Jd4es9m64Ms6x7jTHrLLlcfaMdFjunBeZgyLNNO4Fyl3EClM9UJ17BfH/mkJOKWbjjBwU9/HNP7t1x/Yhv4kBT0coRhw4pno9Kk/XhrwD0aZLTYYXMsBp2YRgvxLVTLY9T7pmugZ1cTcuKoqtWI/7O4KNh2rHzpuHC3WhlMjZaUfi6/5wN/AZ/W9h91DanFQ6aK1E9r8EVc30+EyIrmLb//v8a71lP6T84FdsXdyVvxVlE9CyB6nGjbnUm7VR70rHqrd2Nt1D3+ifLxXw2W4x4W/gYmH7fvzl7fnx8PnuKv+Gw2Kh3J+32xKqX11KGAa34JS8Xt4PD+d3d/HBwGqNj3xLCuMQb3yefCEIfTFS1LuEBhP9+tSi/Dbj2KMxpJL6feVtRnnAP0wsdePVNnxkTFweu88xLC6N6KF7650/CbtdflnEqcFH6562f7RGNPbTjnlnNgkL0zOTPHwawvFEuqasgoyBHIR5Upo50BFnF+KUubxkwL6yPsZBRTUTkHwls16+mj9cuxHENxkukYvmgsjvtTreTIkJLue37gwg/BzUyX6BRu+/f9iGGG8GKyq4ocqWDEMHW1v3hiJ+LmiAXJvWKRJk8xAEZsO378y0/HVXqzAufKr0j50EGLq0cWeKg6h3pi3Jw0JrkvESU5iehJk2pVSK4iaixZVnjeuN4u/4akISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhMQvxn8t0VC3oeqCGwAAAABJRU5ErkJggg==" alt="">
+    
+        <h4>Sign Up</h4>
+    </header>
+
+    <form id="village1" action="#">
+        <input type="text" placeholder="Full name" required>
+        <br>
+        <br>
+        <input type="text" placeholder="Mother Name/Father Name" required>
+        <br>
+        <br>
+        <input id="dob" type="Date" placeholder="Date of Birth" required>
+        <br>
+        <br>
+        <select name="Age" id="village">
+          <option value="Select Your Age">Select Your Age</option>
+          <option value="12">12</option>
+           <option value="12">13</option>
+           <option value="12">14</option>
+           <option value="12">15</option>
+           <option value="12">16</option>
+           <option value="12">17</option>
+           <option value="12">18</option>
+           <option value="12">19</option>
+           <option value="12">20</option>
+           <option value="12">21</option>
+           <option value="12">22</option>
+           <option value="12">23</option>
+           <option value="12">24</option>
+           <option value="25">Age above 25</option>
+        </select>
+        <br><br>
+        <input type="email" placeholder="Enter Email"required>
+        <br>
+        <br>
+       <select id="village" name="village" required>
+        <option value="select your village">Select Your Village</option>
+        <option value="Khammam Districts"><b>Khammam Villages</b></option>
+        <option>Abbugudem</option>
+<option>Abhicherla</option>
+<option>Acharlagudem</option>
+<option>Allapadu</option>
+<option>Allapalli</option>
+<option>Allinagaram</option>
+<option>Allipuram</option>
+<option>Alubaka</option>
+<option>Amaravaram</option>
+<option>Ambarupeta</option>
+<option>Ammagaripalli</option>
+<option>Ammagudem</option>
+<option>Ammapalem</option>
+<option>Ammapeta</option>
+<option>Anantharam</option>
+<option>Anantharampatti Mallur</option>
+<option>Ananthasagar</option>
+<option>Ananthogu</option>
+<option>Anasagaram</option>
+<option>Anisettipalli</option>
+<option>Ankampale</option>
+<option>Annapureddipalli</option>
+<option>Annaruguda</option>
+<option>Appalanarasimhapuram</option>
+<option>Arasarlapadu</option>
+<option>Aregudem</option>
+<option>Arekodu</option>
+<option>Arempula</option>
+<option>Arikayalapadu</option>
+<option>Arlagudem</option>
+<option>Asthanagurthi</option>
+<option>Asupaka</option>
+<option>Aswapur</option>
+<option>Aswaraopet</option>
+<option>Atukuru</option>
+<option>Ayyavarigudem</option>
+<option>B N Thanda</option>
+<option>B.R.Colony</option>
+<option>Bachodu</option>
+<option>Balajipeta</option>
+<option>Ballepalli</option>
+<option>Banapuram</option>
+<option>Bangaruchelka</option>
+<option>Banigandlapahad</option>
+<option>Basavapuram</option>
+<option>Bathulapalli</option>
+<option>Bathupalli Ganagaram</option>
+<option>Bayyannagudem</option>
+<option>Bayyaram</option>
+<option>Beerole</option>
+<option>Bethampudi</option>
+<option>Bhadrachalam</option>
+<option>Bhagyavathaveedu</option>
+<option>Bhairavunipalli</option>
+<option>Bhajanamandir</option>
+<option>Bhavannapalem</option>
+<option>Bhimavaram</option>
+<option>Bhupathiraopeta</option>
+<option>Billupahad</option>
+<option>Bodu</option>
+<option>Bodulabanda</option>
+<option>Bommakal</option>
+<option>Brahmanapalli</option>
+<option>Buddaram</option>
+<option>Budharam</option>
+<option>Budidampahad</option>
+<option>Buradaraghavapuram</option>
+<option>Burahanpuram</option>
+<option>Challasamudram</option>
+<option>Chandrupatla</option>
+<option>Chapralla Palli</option>
+<option>Charla</option>
+<option>Chatagonda</option>
+<option>Chatti</option>
+<option>Chegomma</option>
+<option>Chennaram</option>
+<option>Chennur</option>
+<option>Cherukuru</option>
+<option>Cherupalli</option>
+<option>Cheruvumadharam</option>
+<option>Chidumuru</option>
+<option>Chilkuru</option>
+<option>Chimalapad</option>
+<option>Chimmapudi</option>
+<option>Chinabandirevu</option>
+<option>Chinagopathi</option>
+<option>Chinakorukondi</option>
+<option>Chinamandava</option>
+<option>Chintakani</option>
+<option>Chintalagudem</option>
+<option>Chintaregupalli</option>
+<option>Chintrial</option>
+<option>Chintur</option>
+<option>Chirumarri</option>
+<option>Chirunomula</option>
+<option>Chnadrugonda</option>
+<option>Chodavaram</option>
+<option>Choppakatlapalem</option>
+<option>Choppalli</option>
+<option>Chowtapalli</option>
+<option>Chuchirevulagudem</option>
+<option>Chunchupalli</option>
+<option>Church Road(KHM)</option>
+<option>Collectorate (Khammam)</option>
+<option>Dabala Bazar</option>
+<option>Dabbanuthala</option>
+<option>Dachavaram</option>
+<option>Damaracharla</option>
+<option>Damarcharla</option>
+<option>Dammaigudem</option>
+<option>Dammapeta</option>
+<option>Dantalaboru</option>
+<option>Dendukuru</option>
+<option>Desinenipalem</option>
+<option>Dharedu</option>
+<option>Dubbagudem</option>
+<option>Duddepudi</option>
+<option>Duginepalli</option>
+<option>Dummagudem</option>
+<option>Edavalli</option>
+<option>Edicharlapalli</option>
+<option>Edira</option>
+<option>Edulapuram</option>
+<option>Edullacheruvu</option>
+<option>Edurallapalli</option>
+<option>Enagali</option>
+<option>Enkoor</option>
+<option>Eswaramadharam</option>
+<option>Gaigollapalli</option>
+<option>Gandhasiri</option>
+<option>Gandhichowk (Khammam)</option>
+<option>Gandugulapalli</option>
+<option>Ganeshpadu</option>
+<option>Gangolu</option>
+<option>Gannavaram</option>
+<option>Gannerugoyyapadu</option>
+<option>Ganugapadu</option>
+<option>Garibpeta</option>
+<option>Garikapadu</option>
+<option>Garla</option>
+<option>Gattusingaram</option>
+<option>Godlagudem</option>
+<option>Gogubaka</option>
+<option>Gokinepalli</option>
+<option>Gollapahad</option>
+<option>Gollapudi</option>
+<option>Gommugudem</option>
+<option>Gondigudem</option>
+<option>Gopalapuram</option>
+<option>Gopathi</option>
+<option>Gopavaram</option>
+<option>Gouthampur</option>
+<option>Govindarala</option>
+<option>Gowraram</option>
+<option>Gubbagurthi</option>
+<option>Gudimalla</option>
+<option>Gudurpahad</option>
+<option>Gummadidoddi</option>
+<option>Gummadivalli</option>
+<option>Gundala</option>
+<option>Gundepudi</option>
+<option>Guntupalli Gopavaram</option>
+<option>Guravaigudem</option>
+<option>Guttalabazar</option>
+<option>Guvvalagudem</option>
+<option>Hasnabad</option>
+<option>Hemachandrapuram</option>
+<option>Hwp Aswapur Colony</option>
+<option>Hydersaipeta</option>
+<option>Illuru</option>
+<option>Industrial Area Khammam</option>
+<option>Irlapudi</option>
+<option>Irusulapuram</option>
+<option>Jagannadhapuram</option>
+<option>Jakkepalli</option>
+<option>Jallepalli</option>
+<option>Jamalapuram</option>
+<option>Janampeta</option>
+<option>Jannaram</option>
+<option>Jeediguppa</option>
+<option>Jeelacheruvu</option>
+<option>Jujjularaopet</option>
+<option>Julurpahad</option>
+<option>Jupeda</option>
+<option>Kachanapalli</option>
+<option>Kachavaram</option>
+<option>Kachirajugudem</option>
+<option>Kaikondaigudem</option>
+<option>Kakaravai</option>
+<option>Kakarla</option>
+<option>Kakarlapalli</option>
+<option>Kalakodima</option>
+<option>Kalakota</option>
+<option>Kallorgudem</option>
+<option>Kallur (Khammam)</option>
+<option>Kamalapuram</option>
+<option>Kamanchikal</option>
+<option>Kamepalli</option>
+<option>Kandukur</option>
+<option>Karakagudem</option>
+<option>Karakavagu</option>
+<option>Karepalli</option>
+<option>Karivarigudem</option>
+<option>Kattakuru</option>
+<option>Kattukacharam</option>
+<option>Katukuru</option>
+<option>Kesavapuram</option>
+<option>Khammam</option>
+<option>Khammampadu</option>
+<option>Khanapuram</option>
+<option>Khanapuram Haweli</option>
+<option>Kinnersani Project</option>
+<option>Kistapuram</option>
+<option>Kistaram</option>
+<option>Kodumuru</option>
+<option>Koida</option>
+<option>Kokkireni</option>
+<option>Kolturu</option>
+<option>Komararam</option>
+<option>Komatlagudem</option>
+<option>Komminepalli</option>
+<option>Kommuru</option>
+<option>Kondaigudem</option>
+<option>Kondakodima</option>
+<option>Kondapuram</option>
+<option>Kondavanamala</option>
+<option>Kondrajupeta</option>
+<option>Kongala</option>
+<option>Kongara</option>
+<option>Konijerla</option>
+<option>Koratlagudem</option>
+<option>Korlagudem</option>
+<option>Kothaguda</option>
+<option>Kothagudem Bazar</option>
+<option>Kothalingala</option>
+<option>Kothapalem</option>
+<option>Kothapeta</option>
+<option>Kothuru</option>
+<option>Koyachelaka</option>
+<option>Koyagudem</option>
+<option>Krishnasagar</option>
+<option>Kukunoor</option>
+<option>Kunavaram</option>
+<option>Kunchaparthi</option>
+<option>Kuppanakuntla</option>
+<option>Kurnapalli</option>
+<option>Kurnavalli</option>
+<option>Kusumanchi</option>
+<option>Kuturu</option>
+<option>Lachaguda</option>
+<option>Lakshmipuram</option>
+<option>Lankapalli</option>
+<option>Laxmidepalli</option>
+<option>Laxminagaram</option>
+<option>Laxmipuram</option>
+<option>Lingagudem</option>
+<option>Lingalapalli</option>
+<option>Lingapuram</option>
+<option>Lokya Thanda</option>
+<option>M.E.Complex</option>
+<option>Maddukur</option>
+<option>Maddulagudem</option>
+<option>Maddulapalli</option>
+<option>Madhapuram</option>
+<option>Madhavaram</option>
+<option>Madhira</option>
+<option>Madhira Bazar</option>
+<option>Madupalli</option>
+<option>Mahadevapuram</option>
+<option>Mahammadapuram</option>
+<option>Mailaram</option>
+<option>Malkaram</option>
+<option>Mallaram</option>
+<option>Mallemadugu</option>
+<option>Mallepalli</option>
+<option>Mamidigudem</option>
+<option>Mamnoor</option>
+<option>Manchigonda</option>
+<option>Mandalapahad</option>
+<option>Mandalapalli</option>
+<option>Mandrajupalli</option>
+<option>Mangapuram</option>
+<option>Manikyaram</option>
+<option>Manuguru</option>
+<option>Markodu</option>
+<option>Marlapadu</option>
+<option>Marrigudem</option>
+<option>Matkepalli Namavaram</option>
+<option>Maturu</option>
+<option>Medepalli</option>
+<option>Medidepalli</option>
+<option>Meenavolu</option>
+<option>Mittagudem</option>
+<option>Mittapalli</option>
+<option>Modivari</option>
+<option>Mogallapalli</option>
+<option>Morampalli</option>
+<option>Motamarri</option>
+<option>Motapuram</option>
+<option>Mothipattinagar</option>
+<option>Mothugudem</option>
+<option>Mucharam</option>
+<option>Mucherla</option>
+<option>Muddunuru</option>
+<option>Mudigonda</option>
+<option>Mujjugudem</option>
+<option>Mukamamidi</option>
+<option>Mukunuru</option>
+<option>Mulakalapalli</option>
+<option>Mulkanoor</option>
+<option>Munagala</option>
+<option>Munigepalli</option>
+<option>Murumuru</option>
+<option>Musalimadugu</option>
+<option>Mustibanda</option>
+<option>Mustikuntla</option>
+<option>Muthagudem</option>
+<option>Muthapuram</option>
+<option>Mutyalagudem</option>
+<option>Nacharam</option>
+<option>Nachepalli</option>
+<option>Nagaram</option>
+<option>Nagiligonda</option>
+<option>Nagineniprolu</option>
+<option>Nagulavancha</option>
+<option>Nagupalli</option>
+<option>Nallaballi</option>
+<option>Nandigama</option>
+<option>Naramvarigudem</option>
+<option>Narapunenipalli</option>
+<option>Narasapuram</option>
+<option>Narasimhulagudem</option>
+<option>Narayanapuram</option>
+<option>Nargundukarnagar</option>
+<option>Nayakangudem</option>
+<option>Nelakondapalli</option>
+<option>Nelapatla</option>
+<option>Nellipaka</option>
+<option>Nereda</option>
+<option>New Karaigudem</option>
+<option>Nidanapuram</option>
+<option>Noothankal</option>
+<option>Nsc Campus</option>
+<option>P.N.Puram</option>
+<option>P.V.Township</option>
+<option>Pagideru</option>
+<option>Paladugu</option>
+<option>Palair</option>
+<option>Pallewada</option>
+<option>Pallipadu</option>
+<option>Paloncha</option>
+<option>Pammi</option>
+<option>Pandillapalli</option>
+<option>Pandregupalli</option>
+<option>Pandurangapuram</option>
+<option>Papakole</option>
+<option>Papatpalli</option>
+<option>Parnasala</option>
+<option>Patha Paloncha</option>
+<option>Pathalingala</option>
+<option>Patharlapahad</option>
+<option>Pathrapuram</option>
+<option>Patwarigudem</option>
+<option>Pedabeeravalli</option>
+<option>Pedagopavaram</option>
+<option>Pedakorukondi</option>
+<option>Pedamandava</option>
+<option>Pedamatasileru</option>
+<option>Pedamittapalli</option>
+<option>Pedarkur</option>
+<option>Peddireddigudem</option>
+<option>Pegallapadu</option>
+<option>Penagadapa</option>
+<option>Pentlam</option>
+<option>Penuballi</option>
+<option>Perikasingaram</option>
+<option>Perupalli</option>
+<option>Peruru</option>
+<option>Peruvancha</option>
+<option>Pinapaka</option>
+<option>Pinapaka Pattinagar</option>
+<option>Pindipolu</option>
+<option>Pinjaramadugu</option>
+<option>Pocharam</option>
+<option>Pogallapalli</option>
+<option>Pokalagudem</option>
+<option>Ponnekal</option>
+<option>Posugudem</option>
+<option>Pragallapalli</option>
+<option>Proddutur</option>
+<option>Pullur</option>
+<option>Punyapur</option>
+<option>Purushottapatnam</option>
+<option>Pydigudem</option>
+<option>Pynampalli</option>
+<option>Racharla</option>
+<option>Ragaboinagudem</option>
+<option>Raghavapuram</option>
+<option>Raghunadhapalem</option>
+<option>Raithwari Kothagudem</option>
+<option>Rajapuram</option>
+<option>Rajeswarapuram</option>
+<option>Rajupeta</option>
+<option>Rakapalli</option>
+<option>Ramachandrapuram</option>
+<option>Ramakrishnapuram</option>
+<option>Ramalayam</option>
+<option>Ramannapalem</option>
+<option>Ramavaram</option>
+<option>Rampuram</option>
+<option>Ravigudem</option>
+<option>Ravikampadu</option>
+<option>Ravinoothala</option>
+<option>Rayagudem</option>
+<option>Rayamadharam</option>
+<option>Rayapatnam</option>
+<option>Rebbavaram</option>
+<option>Regalla</option>
+<option>Relakayalapalli</option>
+<option>Remidicherla</option>
+<option>Repakagommu</option>
+<option>Repalle</option>
+<option>Repallewada</option>
+<option>Rompaid</option>
+<option>Rudramkota</option>
+<option>Rudrampur</option>
+<option>S.N.Puram</option>
+<option>Sadasivunipalem</option>
+<option>Sakinaveedu</option>
+<option>Sampathnagar</option>
+<option>Sarapaka</option>
+<option>Sarvaram</option>
+<option>Sathupalli</option>
+<option>Sayanapalli</option>
+<option>Sca Bldg</option>
+<option>Seethampeta</option>
+<option>Seetharampuram</option>
+<option>Settipalli</option>
+<option>Siddaram</option>
+<option>Siddinenigudem</option>
+<option>Siil Campus</option>
+<option>Singarayapalem</option>
+<option>Singareddipalem</option>
+<option>Singareddipalli</option>
+<option>Singareni</option>
+<option>Singavaram</option>
+<option>Singhabhupalem</option>
+<option>Siripuram (Khammam)</option>
+<option>Siripuram Kanigiri</option>
+<option>Snanala Laxmipuram</option>
+<option>Somavaram</option>
+<option>Sridhar Velair</option>
+<option>Sriramgiri</option>
+<option>Subbampeta</option>
+<option>Subled</option>
+<option>Sudimalla</option>
+<option>Sujathanagar</option>
+<option>Sulanagar</option>
+<option>Sunnambatti</option>
+<option>Suraveedu</option>
+<option>Surdepalli</option>
+<option>Suvarnapuram</option>
+<option>T.P.Campus</option>
+<option>Tadakalapudi</option>
+<option>Takkellapadu</option>
+<option>Tallacheruvu</option>
+<option>Tallada</option>
+<option>Tallampahad</option>
+<option>Tallapenta</option>
+<option>Talluri Venkatapuram</option>
+<option>Taluk Office(STP)</option>
+<option>Tangampadu</option>
+<option>Tanikella</option>
+<option>Tatipudi</option>
+<option>Tegada</option>
+<option>Tekubaka</option>
+<option>Tekulapalli</option>
+<option>Teldarupalli</option>
+<option>Telgaram</option>
+<option>Tetlapahad</option>
+<option>Thatkurugommu</option>
+<option>Theerthala</option>
+<option>Thogugudem</option>
+<option>Thondipaka</option>
+<option>Thootakalingannapeta</option>
+<option>Thotapalli (Khammam)</option>
+<option>Timmampeta</option>
+<option>Timmaraopeta</option>
+<option>Timminenipalem</option>
+<option>Tippanapalli</option>
+<option>Tippareddiguem</option>
+<option>Tirumalakunta</option>
+<option>Tirumalapuram</option>
+<option>Tirumalayapalem</option>
+<option>Tondalagopavaram</option>
+<option>Tootikuntla</option>
+<option>Trunk Road (Khammam)</option>
+<option>Tumburu</option>
+<option>Tummala</option>
+<option>Tummalapalli</option>
+<option>Turakagudem</option>
+<option>Turubaka</option>
+<option>Ulvanoor</option>
+<option>Ummadivaram</option>
+<option>Uppaka</option>
+<option>Uppalachelka</option>
+<option>Uppalapahad</option>
+<option>Upperu</option>
+<option>Usirikayalapalli</option>
+<option>V.R.Puram</option>
+<option>V.V.Palem</option>
+<option>Vaddigudem</option>
+<option>Vallabhi</option>
+<option>Vallapuram</option>
+<option>Vandanam</option>
+<option>Vangaveedu</option>
+<option>Veerabhadravaram</option>
+<option>Vegithota</option>
+<option>Velairpahad</option>
+<option>Velugumatla</option>
+<option>Vemsur</option>
+<option>Venkatagiri</option>
+<option>Venkatapuram</option>
+<option>Venkatareddipeta</option>
+<option>Venkatayapalem</option>
+<option>Venkatapuram</option>
+<option>Vepakuntla</option>
+<option>Vinayakapuram</option>
+<option>Vinjaram</option>
+<option>Vippalamadaka</option>
+<option>Viswanathapalli</option>
+<option>Vootukuru</option>
+<option>Wazeedu Nagaram</option>
+<option>Wyra</option>
+<option>Y.C. Roads</option>
+<option>Yanamboil</option>
+<option>Yatalakunta</option>
+<option>Yatapaka</option>
+<option>Yellandu</option>
+<option>Yellandu colls</option>
+<option>Yerraboinapalli</option>
+<option>Yerrupalem</option>
+<option>Yerugatla</option>
+<option value="Mahabububad Villages">Mahabububad Villages</option>
+
+        
+<option value="Abbaipalem">Abbaipalem</option>
+        <option value="Adivarmpet">Adivarmpet</option>
+        <option value="Agapet">Agapet</option>
+        <option value="Akkirala">Akkirala</option>
+        <option value="Alair">Alair</option>
+        <option value="Ammangal">Ammangal</option>
+        <option value="Ammapalem">Ammapalem</option>
+        <option value="Ammapuram">Ammapuram</option>
+        <option value="Anantharamu">Anantharamu</option>
+        <option value="Anepur">Anepur</option>
+        <option value="Ankannagudem">Ankannagudem</option>
+        <option value="Annaram">Annaram</option>
+        <option value="Apparajpalle">Apparajpalle</option>
+        <option value="Arpanapalli">Arpanapalli</option>
+        <option value="Ayodhyapur">Ayodhyapur</option>
+        <option value="Ayyagaripalle">Ayyagaripalle</option>
+        <option value="Bakkachinthapadu">Bakkachinthapadu</option>
+        <option value="Balapala">Balapala</option>
+        <option value="Bathupalle">Bathupalle</option>
+        <option value="Bayyaram">Bayyaram</option>
+        <option value="Bechharajpalle">Bechharajpalle</option>
+        <option value="Beriwada">Beriwada</option>
+        <option value="Bethole">Bethole</option>
+        <option value="Bhupalaphatnam">Bhupalaphatnam</option>
+        <option value="Boddugonda">Boddugonda</option>
+        <option value="Bojjannapeta">Bojjannapeta</option>
+        <option value="Bollepally">Bollepally</option>
+        <option value="Bommakal">Bommakal</option>
+        <option value="Bonthupalle">Bonthupalle</option>
+        <option value="Bothavanigudem">Bothavanigudem</option>
+        <option value="Bourugonda">Bourugonda</option>
+        <option value="Brahmanakothapalle">Brahmanakothapalle</option>
+        <option value="Buddharam">Buddharam</option>
+        <option value="Burgupahad">Burgupahad</option>
+        <option value="Burhanpur">Burhanpur</option>
+        <option value="Chandragiri">Chandragiri</option>
+        <option value="Cherlapalem">Cherlapalem</option>
+        <option value="Chikataipalem">Chikataipalem</option>
+        <option value="Chilkodu">Chilkodu</option>
+        <option value="Chillamcherla">Chillamcherla</option>
+        <option value="Chinnagudur">Chinnagudur</option>
+        <option value="Chinnamupparam">Chinnamupparam</option>
+        <option value="Chinnanagaram">Chinnanagaram</option>
+        <option value="Chinnavangara">Chinnavangara</option>
+        <option value="Chinthagudem">Chinthagudem</option>
+        <option value="Chinthalapalle">Chinthalapalle</option>
+        <option value="Chinthapalle">Chinthapalle</option>
+        <option value="Chitya">Chitya</option>
+        <option value="Dameravancha">Dameravancha</option>
+        <option value="Danthalapalle">Danthalapalle</option>
+        <option value="Datla">Datla</option>
+        <option value="Devavaram_D">Devavaram_D</option>
+        <option value="Dhanasari">Dhanasari</option>
+        <option value="Dharmapuram">Dharmapuram</option>
+        <option value="Dharmaram">Dharmaram</option>
+        <option value="Doravarivempalle">Doravarivempalle</option>
+        <option value="Dornakal">Dornakal</option>
+        <option value="Dornakal_Gollacherla">Dornakal_Gollacherla</option>
+        <option value="Dubbagudem">Dubbagudem</option>
+        <option value="Durgaram">Durgaram</option>
+        <option value="Edulapusapalle">Edulapusapalle</option>
+        <option value="Enchagudem">Enchagudem</option>
+        <option value="Erjerla">Erjerla</option>
+        <option value="Eshwaragudem">Eshwaragudem</option>
+        <option value="Fathepur">Fathepur</option>
+        <option value="Gajulaghat">Gajulaghat</option>
+        <option value="Galivarigudem">Galivarigudem</option>
+        <option value="Ganagavaram">Ganagavaram</option>
+        <option value="Gandhampalli">Gandhampalli</option>
+        <option value="Gangaram_Ponugonda">Gangaram_Ponugonda</option>
+        <option value="Gantlakunta">Gantlakunta</option>
+        <option value="Garla">Garla</option>
+        <option value="Garla_Kannaigudem">Garla_Kannaigudem</option>
+        <option value="Ggudrepalle">Ggudrepalle</option>
+        <option value="Giripuram">Giripuram</option>
+        <option value="Gopalagiri">Gopalagiri</option>
+        <option value="Gopalapur">Gopalapur</option>
+        <option value="Gopalapuram">Gopalapuram</option>
+        <option value="Govindhapuram">Govindhapuram</option>
+        <option value="Gowravarm">Gowravarm</option>
+        <option value="Gudumuru">Gudumuru</option>
+        <option value="Gudur">Gudur</option>
+<option value="Bupathipet">Bupathipet</option>
+<option value="Gundam">Gundam</option>
+<option value="Gundenga">Gundenga</option>
+<option value="Gundepudi">Gundepudi</option>
+<option value="Gunjed">Gunjed</option>
+<option value="Gunnapalle">Gunnapalle</option>
+<option value="Gurimella">Gurimella</option>
+<option value="Gurralakunta">Gurralakunta</option>
+<option value="Gurthur">Gurthur</option>
+<option value="Haripiryala">Haripiryala</option>
+<option value="Intikanne">Intikanne</option>
+<option value="Inugurthy">Inugurthy</option>
+<option value="Irkulakunta_D">Irkulakunta_D</option>
+<option value="Irsulapuram">Irsulapuram</option>
+<option value="Jagathraopet">Jagathraopet</option>
+<option value="Jamannadlapalle">Jamannadlapalle</option>
+<option value="Jamanndlapalle">Jamanndlapalle</option>
+<option value="Jangalapalle">Jangalapalle</option>
+<option value="Jangalapally(D)">Jangalapally(D)</option>
+<option value="Jangamvanigudem">Jangamvanigudem</option>
+<option value="Jangligonda">Jangligonda</option>
+<option value="Jayapuram">Jayapuram</option>
+<option value="Jayyaram">Jayyaram</option>
+<option value="Kachanapalli">Kachanapalli</option>
+<option value="Kachikal">Kachikal</option>
+<option value="Kalvapalle">Kalvapalle</option>
+<option value="Kalwala">Kalwala</option>
+<option value="Kambalapalli">Kambalapalli</option>
+<option value="Kampalle">Kampalle</option>
+<option value="Kandikonda">Kandikonda</option>
+<option value="Kangaragidda">Kangaragidda</option>
+<option value="Kannaigudem">Kannaigudem</option>
+<option value="Kannegudem">Kannegudem</option>
+<option value="Kantaipalem">Kantaipalem</option>
+<option value="Karkal">Karkal</option>
+<option value="Karlai">Karlai</option>
+<option value="Karnegandi">Karnegandi</option>
+<option value="Katrenam">Katrenam</option>
+<option value="Kesamudram">Kesamudram</option>
+<option value="Kesamudram_Katrepalle">Kesamudram_Katrepalle</option>
+<option value="Keshavapatnam">Keshavapatnam</option>
+<option value="Khambhalapalle">Khambhalapalle</option>
+<option value="Khanapur">Khanapur</option>
+<option value="Kishtapur">Kishtapur</option>
+<option value="Kodishalamitta">Kodishalamitta</option>
+<option value="Kollapur">Kollapur</option>
+<option value="Komatipalli">Komatipalli</option>
+<option value="Kommanapalli">Kommanapalli</option>
+<option value="Kommavaram">Kommavaram</option>
+<option value="Komtlagudem">Komtlagudem</option>
+<option value="Koripalle">Koripalle</option>
+<option value="Korukondapalle">Korukondapalle</option>
+<option value="Kothaguda_Konapur">Kothaguda_Konapur</option>
+<option value="Kothagudem">Kothagudem</option>
+<option value="Kothapalle">Kothapalle</option>
+<option value="Kothapalle">Kothapalle</option>
+<option value="Kothapeta">Kothapeta</option>
+<option value="Kowsalyadevipalle">Kowsalyadevipalle</option>
+<option value="Kummarikunta">Kummarikunta</option>
+<option value="Kuncherlagudem">Kuncherlagudem</option>
+<option value="Kundanapalle">Kundanapalle</option>
+<option value="Kuravi">Kuravi</option>
+<option value="Kuravi_Gundrathimadugu">Kuravi_Gundrathimadugu</option>
+<option value="Laxmipur">Laxmipur</option>
+<option value="Lingagiri">Lingagiri</option>
+<option value="Machanpalle">Machanpalle</option>
+<option value="Macherla">Macherla</option>
+<option value="Madagudem">Madagudem</option>
+<option value="Madanapur">Madanapur</option>
+<option value="Madanthurthy">Madanthurthy</option>
+<option value="Maddivancha">Maddivancha</option>
+<option value="Madhavapur">Madhavapur</option>
+<option value="Madipalle">Madipalle</option>
+<option value="Mahabubabad">Mahabubabad</option>
+<option value="Mahabubabad_Reddial">Mahabubabad_Reddial</option>
+<option value="Mahadevunigudem">Mahadevunigudem</option>
+<option value="Mahadevunigudem">Mahadevunigudem</option>
+<option value="Mahamoodpatanam">Mahamoodpatanam</option>
+<option value="Mallala">Mallala</option>
+<option value="Mamidigudem">Mamidigudem</option>
+<option value="Mannegudem">Mannegudem</option>
+<option value="Maripeda">Maripeda</option>
+<option value="Maripeda_Yellampet">Maripeda_Yellampet</option>
+<option value="Marrigudem">Marrigudem</option>
+<option value="Marrigudem">Marrigudem</option>
+<option value="Matedu">Matedu</option>
+<option value="Matwada">Matwada</option>
+<!-- ... (Previous options) ... -->
+<option value="Modugulagudem">Modugulagudem</option>
+<option value="Moglicherla">Moglicherla</option>
+<option value="Mokallapalle">Mokallapalle</option>
+<option value="Motlathimmapuram">Motlathimmapuram</option>
+<option value="Mudupugal">Mudupugal</option>
+<option value="Mulkalapalle">Mulkalapalle</option>
+<option value="Mulkanoor">Mulkanoor</option>
+<option value="Mungimadugu">Mungimadugu</option>
+<option value="Munugalvedu">Munugalvedu</option>
+<option value="Musimi">Musimi</option>
+<option value="Mylaram">Mylaram</option>
+<option value="Nadiwad">Nadiwad</option>
+<option value="Naikapalle">Naikapalle</option>
+<option value="Nainala">Nainala</option>
+<option value="Nallela">Nallela</option>
+<option value="Nancharimadur">Nancharimadur</option>
+<option value="Narayanapur">Narayanapur</option>
+<option value="Narsimhulagudem">Narsimhulagudem</option>
+<option value="Narsimhulapet">Narsimhulapet</option>
+<option value="Narsimhulapet_Kommulavancha">Narsimhulapet_Kommulavancha</option>
+<option value="Neelakurthy">Neelakurthy</option>
+<option value="Neelampalle">Neelampalle</option>
+<option value="Neelavancha">Neelavancha</option>
+<option value="Nellikudur">Nellikudur</option>
+<option value="Nellikuduru_Macharajpalle">Nellikuduru_Macharajpalle</option>
+<option value="Nerada">Nerada</option>
+<option value="Oorabaka">Oorabaka</option>
+<option value="Ootai">Ootai</option>
+<option value="Ootla">Ootla</option>
+<option value="Pandem">Pandem</option>
+<option value="Parvathagiri">Parvathagiri</option>
+<option value="Peddamupparam">Peddamupparam</option>
+<option value="Peddanagaram">Peddanagaram</option>
+<option value="Peddavangara">Peddavangara</option>
+<option value="Peddavangara_Authapuram">Peddavangara_Authapuram</option>
+<option value="Peddayellapur">Peddayellapur</option>
+<option value="Pegadapalle">Pegadapalle</option>
+<option value="Penugonda">Penugonda</option>
+<option value="Perumandlasankeesa">Perumandlasankeesa</option>
+<option value="Pochampalle">Pochampalle</option>
+<option value="Pocharam">Pocharam</option>
+<option value="Pocharam">Pocharam</option>
+<option value="Pogallapalle">Pogallapalle</option>
+<option value="Polaram">Polaram</option>
+<option value="Polepalle">Polepalle</option>
+<option value="Ponugudu">Ponugudu</option>
+<option value="Pulluru">Pulluru</option>
+<option value="Purushothamaigudem">Purushothamaigudem</option>
+<option value="Puttalabhupathy">Puttalabhupathy</option>
+<option value="Rajanpally">Rajanpally</option>
+<option value="Rajole">Rajole</option>
+<option value="Rajulakothapalle">Rajulakothapalle</option>
+<option value="Ramanujapuram">Ramanujapuram</option>
+<option value="Ramavaram">Ramavaram</option>
+<option value="Ramavaram">Ramavaram</option>
+<option value="Ramchandrapuram">Ramchandrapuram</option>
+<option value="Rampur D">Rampur D</option>
+<option value="Rampuram">Rampuram</option>
+<option value="Rampuram">Rampuram</option>
+<option value="Rangappagudem">Rangappagudem</option>
+<option value="Rangapuram">Rangapuram</option>
+<option value="Ravigudem">Ravigudem</option>
+<option value="Ravirala">Ravirala</option>
+<option value="Reponi">Reponi</option>
+<option value="Routhugudem">Routhugudem</option>
+<option value="Rudravaram_D">Rudravaram_D</option>
+<option value="Sadireddipalle">Sadireddipalle</option>
+<option value="Seerole">Seerole</option>
+<option value="Seethanagaram">Seethanagaram</option>
+<option value="Seripuram">Seripuram</option>
+<option value="Shanigapuram">Shanigapuram</option>
+<option value="Singaram">Singaram</option>
+<option value="Singaram">Singaram</option>
+<option value="Somaram">Somaram</option>
+<option value="Sriramgiri">Sriramgiri</option>
+<option value="Sundanpalle">Sudanpalle</option>
+<!-- ... (Previous options) ... -->
+<option value="Tallapusapally">Tallapusapally</option>
+<option value="Tanamcherla">Tanamcherla</option>
+<option value="Teegalaveni">Teegalaveni</option>
+<option value="Thallaorkal">Thallaorkal</option>
+<option value="Thallasankeesa">Thallasankeesa</option>
+<option value="Thativarivempalle">Thativarivempalle</option>
+<option value="Thattupalle">Thattupalle</option>
+<option value="Thimmapur">Thimmapur</option>
+<option value="Thirmalagandi">Thirmalagandi</option>
+<option value="Thirumalapuram">Thirumalapuram</option>
+<option value="Thorrur">Thorrur</option>
+<option value="Thorrur_Jamasthanpur">Thorrur_Jamasthanpur</option>
+<option value="Uggampalle">Uggampalle</option>
+<option value="Ullapalle">Ullapalle</option>
+<option value="Uppalapadu">Uppalapadu</option>
+<option value="Upparagudem">Upparagudem</option>
+<option value="Upparagudem(D)">Upparagudem(D)</option>
+<option value="Upparapalle">Upparapalle</option>
+<option value="Uyyalawada">Uyyalawada</option>
+<option value="V.S.Laxmipur">V.S.Laxmipur</option>
+<option value="Vangapet">Vangapet</option>
+<option value="Vanthadupula">Vanthadupula</option>
+<option value="Vavilala">Vavilala</option>
+<option value="Veeraram">Veeraram</option>
+<option value="Veesumpalle">Veesumpalle</option>
+<option value="Velikatte">Velikatte</option>
+<option value="Velubelly">Velubelly</option>
+<option value="Vemulapalle">Vemulapalle</option>
+<option value="Vemunur">Vemunur</option>
+<option value="Venkatapuram">Venkatapuram</option>
+<option value="Venkatapuram">Venkatapuram</option>
+<option value="Vennarram">Vennarram</option>
+<option value="Waddekothapalle">Waddekothapalle</option>
+<option value="Yedullapalle">Yedullapalle</option>
+<option value="Yerrabelligudem">Yerrabelligudem</option>
+ </select>
+       <br>
+       <br>
+       <select id="village" name="village" required>
+        <option value="Select Your Mandal">Select Your Mandal</option>
+        <option value="Khammam Mandals">Khammam Mandals</option>
+        <option value="Bonakal">Bonakal</option>
+        <option value="Chinthakani">Chinthakani</option>
+        <option value="Enkoor">Enkoor</option>
+        <option value="Kallur">Kallur</option>
+        <option value="Kamepally">Kamepally</option>
+        <option value="Konijerla">Konijerla</option>
+        <option value="Kusumanchi">Kusumanchi</option>
+        <option value="Khammam (Rural)">Khammam (Rural)</option>
+        <option value="Madhira">Madhira</option>
+        <option value="Mudigonda">Mudigonda</option>
+        <option value="Nelakondapally">Nelakondapally</option>
+        <option value="Penubally">Penubally</option>
+        <option value="Ragunathapalem">Ragunathapalem</option>
+        <option value="Sathupally">Sathupally</option>
+        <option value="Singareni">Singareni</option>
+        <option value="Thallada">Thallada</option>
+        <option value="Thirumalaypalem">Thirumalaypalem</option>
+        <option value="Vemsoor">Vemsoor</option>
+        <option value="Wyra">Wyra</option>
+        <option value="Mabd mandals">Mahabububad Mandals</option>
+        <option value="Bayyaram">Bayyaram</option>
+        <option value="Chinnagudur">Chinnagudur</option>
+        <option value="Danthalapalle">Danthalapalle</option>
+        <option value="Dornakal">Dornakal</option>
+        <option value="Gangaram">Gangaram</option>
+        <option value="Garla">Garla</option>
+        <option value="Gudur">Gudur</option>
+        <option value="Kesamudram">Kesamudram</option>
+        <option value="Kothaguda">Kothaguda</option>
+        <option value="Kuravi">Kuravi</option>
+        <option value="Mahabubabad">Mahabubabad</option>
+        <option value="Maripeda">Maripeda</option>
+        <option value="Narsimhulapet">Narsimhulapet</option>
+        <option value="Nellikudur">Nellikudur</option>
+        <option value="Peddavangara">Peddavangara</option>
+        <option value="Thorrur">Thorrur</option>
+    </select>
+    <br><br>
+    <select id="village" name="village" required>
+        <option value="Select Your District">Select Your District</option>
+        <option value="Khammam">Khammam</option>
+        <option value="Mahabubabad">Mahabubabad</option>
+    </select>
+    <br>
+    <br>
+    <select name="studies" id="village" required>
+      <option value="Select Your Education">Select Your Education</option>
+      <option value="Nursery">Nursery</option>
+      <option value="LKG/UKG">LKG/UKG</option>
+      <option value="Class I">Class I</option>
+      <option value="Class II">Class II</option>
+      <option value="Class III">Class III</option>
+      <option value="Class IV">Class IV</option>
+      <option value="Class V">Class V</option>
+      <option value="Class VI">Class VI</option>
+      <option value="Class VII">Class VII</option>
+      <option value="Class VIII">Class VIII</option>
+      <option value="Class IX">Class IX</option>
+      <option value="Class X">Class X</option>
+      <option value="Class XI">Class XI</option>
+      <option value="Class XII">Class XII</option>
+      <option value="Degree(BSc)">Degree(BSc/MSc)</option>
+      <option value="Degree(BA)">Degree(BA/MA)</option>
+      <option value="Degree(BBA)">Degree(BBA/MBA)</option>
+      <option value="Degree (Other)">Degree (Other)</option>
+      <option value="Engineering(B.Tech/M.Tech)">Engineering(B.Tech/M.Tech)</option>
+      <option value="Engineering(B.Arch/M.Arch)">Engineering(B.Arch/M.Arch)</option>
+      <option value="No Educational Status">No Educational Status</option>
+    </select>
+    <br>
+    <br>
+    <select name="" id="village">
+        <option value="Select Martial status">Select Martial status</option>
+        <option value="Not Married">Not Married</option>
+        <option value="Married">Married</option>
+        <option value="Divorced">Divorced</option>
+        <option value="Widowed">Widowed(Man/Woman)</option>
+    </select>
+    </form>
+    <br><br>
+  <button reset onclick="showAlert()"class="hover-button">Sign Up</button><br><br>
+  <script>
+    function showAlert() {
+        alert("Invalid Credentials, Enter Again");
+    }
+  </script>
+</body>
+</html>

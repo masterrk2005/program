@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title> 
+            My text editor
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <style>
+        .login-page {
+            text-align: center;
+            margin-right: 400px;
+            margin-left:400px;
+            padding:80px;
+            margin-top:20px;
+            margin-bottom:20px;
+            box-shadow: 15px 15px 15px 15px lightsteelblue;
+            border-radius: 26px;
+            
+        }
+        .login-page:hover {
+            box-shadow: 10px 10px 10px 10px lightsteelblue;
+        }
+
+        h1 {
+            margin-bottom:20px;
+            color:blue;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            font-weight:bold;
+        }
+        h1:hover {
+            color:red;
+        }
+        .input- {
+            width:280px;
+            height:40px;
+            border-radius: 6px;
+            border:1px solid grey;
+        }
+        .btn {
+            width:280px;
+            height:40px;
+            background-color:blue;
+            color:white;
+            border-radius:9px;
+            font-weight:bold;
+        }
+        .btn:hover {
+            background-color:rgb(38, 97, 247);
+        }
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="login-page">
+            <h1>
+                Facebook
+            </h1>
+            <br>
+            <br>
+            <form action="_blank">
+                <input class="input-" type="text" placeholder="Username or Email" required>
+                <br>
+                <br>
+                <br>
+                <input class="input-" type="password" placeholder="Password" required>
+                <br>
+                <br>
+                <br>
+                <button onclick="logon()" class="btn"> Login</button>
+            </form>
+        </div>
+        <script>
+            function logon()
+            {
+                alert("Invalid Credentials/Wrong password");
+            }
+        </script>
+    </body>
+</html>

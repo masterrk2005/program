@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiger Reserve of Telangana</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&family=El+Messiri:wght@500&family=Fira+Sans+Extra+Condensed&family=Gemunu+Libre:wght@200;600&family=Reem+Kufi+Fun&family=Reem+Kufi:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      background-color: aliceblue;
+    }
+
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .main {
+      display: block;
+      padding: 2px;
+      border-radius: 2px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      border-radius: 50px 50px;
+      border: 2px solid;
+      display: block;
+      filter: saturate(180%);
+      margin-right: auto;
+      margin-left: auto;
+      width: 60px;
+      height: 60px;
+      padding-top: 0px;
+      animation: rotateLogo 10s linear infinite;
+    }
+
+    @keyframes rotateLogo {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .ttrhead {
+      text-align: center;
+      height: 20px;
+      font-family: 'Big Shoulders Stencil Text', sans-serif;
+      font-size: 28px;
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+      margin-bottom: 20px;
+      filter: saturate(200%);
+      color: green;
+      animation: colorChange 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes colorChange {
+      from {
+        color: green;
+      }
+      to {
+        color: purple;
+      }
+    }
+
+    .main-em {
+      text-align: center;
+      color: grey;
+      font-family: 'Big Shoulders Stencil Text', sans-serif;
+      font-family: 'El Messiri', sans-serif;
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+      font-family: 'Gemunu Libre', sans-serif;
+      font-family: 'Reem Kufi', sans-serif;
+      font-family: 'Reem Kufi Fun', sans-serif;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    hr {
+      width: 200px;
+      border-radius: 20px;
+      color: grey;
+      animation: pulseHR 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseHR {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+
+    .trs-ns {
+      width: 180px;
+      height: 100px;
+      display: inline;
+      margin: auto;
+      border: 2px solid;
+      border-radius: 2.5px;
+      padding: 12px 10px;
+      transition: transform 0.5s ease-in-out;
+      animation: bounceImage 2s ease-in-out infinite;
+    }
+
+    @keyframes bounceImage {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .TRh {
+      text-decoration: none;
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+
+    .x {
+      width: 200px;
+      height: 35px;
+      border: 2px dashed darkblue;
+      font-weight: bold;
+      border-radius: 3px;
+      background-color: lavender;
+      animation: glowButton 2s ease-in-out infinite;
+    }
+
+    @keyframes glowButton {
+      0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+    }
+    h4 {
+      font-family: 'Big Shoulders Stencil Text', sans-serif;
+      font-family: 'El Messiri', sans-serif;
+      font-family: 'Fira Sans Extra Condensed', sans-serif;
+      font-family: 'Gemunu Libre', sans-serif;
+      font-family: 'Reem Kufi', sans-serif;
+      font-family: 'Reem Kufi Fun', sans-serif;
+    }
+    .s-main {
+        text-align: center;
+        display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main">
+      <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk72m6Pv7cDzMHvwhsLJxDzDQ9PrRn534O9Q&usqp=CAU">
+      <h2 class="ttrhead">Tiger Reserve of Telangana State</h2>
+      <p class="main-em">Estd.1967 ~ Saving Tiger Entity</p>
+      <hr>
+      <br>
+      <button class="x">Contribute Reserve</button>
+    </div>
+  </header>
+  <br>
+
+  <main>
+    <div class="s-main">
+      <h3 class="TRh">Tiger Reserves in Telangana</h3>
+      <br>
+      <h4>
+        Nagarjunasagar-Srisailam Tiger Reserve 
+      </h4>
+      <br>
+      <p>
+        Nagarjunsagar-Srisailam Tiger Reserve is the largest tiger reserve in India. The reserve spreads over five districts, Nandyal District, Prakasam District, Palnadu District, Nalgonda District and Mahabub Nagar district. The total area of the tiger reserve is 3,728 km2 (1,439 sq mi).[1] The core area of this reserve is 1,200 km2 (460 sq mi). The reservoirs and temples of Srisailam are major attraction for many tourists and pilgrims.[2] It is the largest tiger reserve forest in India and is located inside Nallamala forest area.
+      </p>+
+      <br>
+      <img onclick="NSTR()" class="trs-ns" src="https://www.talentias.in/wp-content/uploads/2022/07/Nagarjunasagar-Srisailam-Tiger-Reserve-1.jpg">
+    </div>
+  </main>
+  <script>
+    function NSTR() {
+      alert("Nagarjunasagar-Srisailam Tiger Reserve")
+    }
+  </script>
+</body>
+</html>

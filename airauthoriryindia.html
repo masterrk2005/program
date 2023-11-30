@@ -1,0 +1,763 @@
+<!--CREATED BY "MASTER RAVIKIRAN"-->
+<!--CREATED ON "20-10-2023"-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airport Authority of India</title>
+    <link rel="stylesheet" href="/airportauthoritiesofindia.css">
+    <script src="airportauthoritiesofindia.js"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: "Roboto";
+}
+
+.logo {
+    width: 160px;
+    margin-left: 125px;
+}
+
+.head {
+
+    margin-left: 20%;
+    font-style: italic;
+    color: darkblue;
+    font-family: 'roboto';
+    font-size: 20px;
+}
+
+.search {
+    margin-left: 23%;
+    position: absolute;
+    top: 1000px;
+    width: 210px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.s-2 {
+    display: inline;
+    width: 32px;
+    position: absolute;
+    border-radius: 50px;
+    top: 136px;
+    margin-left: 12px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: indigo;
+}
+
+.panel {
+    padding: 10px 70px 70px 0;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+h3 {
+    margin-left: 46px;
+}
+
+.from {
+    width: 30px;
+    margin-right: 200px;
+}
+
+#FROM {
+    display: block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 90px;
+    width: 220px;
+    height: 30px;
+    border-radius: 21px;
+    background-color: aliceblue;
+}
+
+.to {
+    width: 30px;
+    margin-right: 200px;
+    transform: rotate(180deg);
+}
+
+.room {
+    display: block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 90px;
+    width: 220px;
+    height: 30px;
+    border-radius: 9px;
+    background-color: aliceblue;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.airway {
+    padding: 20px 70px 80px 0;
+    text-align: center;
+    box-shadow: 30px 30px 30px grey;
+    border-radius: 65px;
+}
+
+.airway2 {
+    padding: 30px 70px 80px 0;
+    margin-top: -16px;
+    text-align: center;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 25px;
+}
+
+#sys {
+    width: 70px;
+    position: absolute;
+    right: 280px;
+}
+
+#sys1 {
+    width: 60px;
+    position: absolute;
+    right: 285px;
+}
+
+#sys2 {
+    width: 60px;
+    position: absolute;
+    right: 285px
+}
+
+.txt {
+    position: absolute;
+    top: 980px;
+}
+
+.txt1 {
+    position: absolute;
+    top: 1050px;
+}
+
+.txt2 {
+    position: absolute;
+    top: 1120px;
+}
+
+.txt3 {
+    position: absolute;
+    top: 1180px;
+}
+
+.txt4 {
+    position: absolute;
+    top: 1250px
+}
+
+.txt5 {
+    position: absolute;
+    top: 1320px
+}
+
+.txt6 {
+    position: absolute;
+    top: 1380px;
+}
+
+.footer {
+    background-color: lightsteelblue;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#ia {
+    width: 80px;
+    float: left;
+    margin-left: 27px;
+}
+
+.iaa {
+    width: 110px;
+    float: left;
+    margin-left: 14px;
+}
+
+.iaaa {
+    width: 80px;
+    float: left;
+    margin-left: 21px;
+    margin-right: 110px;
+}
+
+.airl {
+    margin-left: -80px;
+}
+
+.da {
+    width: 80px;
+    float: right;
+    margin-left: 20px;
+}
+
+.da1 {
+    width: 110px;
+    float: right;
+    margin-left: 10px;
+}
+
+.da2 {
+    width: 110px;
+    float: right;
+    margin-left: 10px;
+}
+    </style>
+    <script>
+        function fare() {
+            alert("404 ~ No such Fare Found ..! ")
+        }
+    </script>
+    <div>
+        <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74527D9ALFRLG-sRuptZvZRIrAWwmeb888frb7Sn4OilvfZ_ppKLtXG4&s=10">
+        <h2 class="head">
+            Airports Authority of India
+        </h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p>"Find where you want to go"</p>
+    <br>
+    <div class="panel">
+        <h3><em>Domestic Selector Mode</em></h3>
+        <br>
+        <br>
+        <img class="from" src="https://i.pinimg.com/736x/fe/e5/80/fee580f68f80bb38ae6ca66494eb6d0c.jpg" alt="from">
+        <select name="Airport" id="FROM" required>
+            <option value="FROM"><em>*Select From Airport</em></option>
+            <option value="Agartala">Agartala Airport - [IXA]</option>
+            <option value="Agra">Agra Airport - [AGR]</option>
+            <option value="Ahmedabad">Ahmedabad Airport - [AMD]</option>
+            <option value="Aizawl">Aizawl Airport - [AJL]</option>
+            <option value="Amritsar">Amritsar Airport - [ATQ]</option>
+            <option value="Aurangabad">Aurangabad Airport - [IXU]</option>
+            <option value="Bagdogra">Bagdogra Airport - [IXB]</option>
+            <option value="Bareilly">Bareilly Airport - [BEK]</option>
+            <option value="BPM">Begumpet Airport - BPM</option>
+            <option value="Belagavi">Belagavi Airport - [IXG]</option>
+            <option value="Bengaluru">Bengaluru Airport - [BLR]</option>
+            <option value="Bhopal">Bhopal Airport - [BHO]</option>
+            <option value="Bhubaneswar">Bhubaneswar Airport - [BBI]</option>
+            <option value="Chandigarh">Chandigarh Airport - [IXC]</option>
+            <option value="Chennai">Chennai Airport - [MAA]</option>
+            <option value="Coimbatore">Coimbatore Airport - [CJB]</option>
+            <option value="Darbhanga">Darbhanga Airport - [DBR]</option>
+            <option value="Dehradun">Dehradun Airport - [DED]</option>
+            <option value="Delhi">Delhi Airport - [DEL]</option>
+            <option value="Deoghar">Deoghar Airport - [DGH]</option>
+            <option value="Dibrugarh">Dibrugarh Airport - [DIB]</option>
+            <option value="Dimapur">Dimapur Airport - [DMU]</option>
+            <option value="Durgapur">Durgapur Airport - [RDP]</option>
+            <option value="NEW Gaya">NEW Gaya Airport - [GAY]</option>
+            <option value="Goa">Goa Airport - [GOI]</option>
+            <option value="Gorakhpur">Gorakhpur Airport - [GOP]</option>
+            <option value="Guwahati">Guwahati Airport - [GAU]</option>
+            <option value="Gwalior">Gwalior Airport - [GWL]</option>
+            <option value="Hubli">Hubli Airport - [HBX]</option>
+            <option value="Hyderabad">Hyderabad Airport - [HYD]</option>
+            <option value="Imphal">Imphal Airport - [IMF]</option>
+            <option value="Indore">Indore Airport - [IDR]</option>
+            <option value="Itanagar">Itanagar Airport - [HGI]</option>
+            <option value="Jabalpur">Jabalpur Airport - [JLR]</option>
+            <option value="Jaipur">Jaipur Airport - [JAI]</option>
+            <option value="Jammu">Jammu Airport - [IXJ]</option>
+            <option value="Jodhpur">Jodhpur Airport - [JDH]</option>
+            <option value="Jorhat">Jorhat Airport - [JRH]</option>
+            <option value="Kadapa">Kadapa Airport - [CDP]</option>
+            <option value="Kannur">Kannur Airport - [CNN]</option>
+            <option value="NEW Kanpur">NEW Kanpur Airport - [KNU]</option>
+            <option value="Kochi">Kochi Airport - [COK]</option>
+            <option value="Kolhapur">Kolhapur Airport - [KLH]</option>
+            <option value="Kolkata">Kolkata Airport - [CCU]</option>
+            <option value="Kozhikode">Kozhikode Airport - [CCJ]</option>
+            <option value="Kurnool">Kurnool Airport - [KJB]</option>
+            <option value="Leh">Leh Airport - [IXL]</option>
+            <option value="Lucknow">Lucknow Airport - [LKO]</option>
+            <option value="Madurai">Madurai Airport - [IXM]</option>
+            <option value="Mangaluru">Mangaluru Airport - [IXE]</option>
+            <option value="Mumbai">Mumbai Airport - [BOM]</option>
+            <option value="Mysuru">Mysuru Airport - [MYQ]</option>
+            <option value="Nagpur">Nagpur Airport - [NAG]</option>
+            <option value="North Goa">North Goa Airport - [GOX]</option>
+            <option value="NEW Pantnagar">NEW Pantnagar Airport - [PGH]</option>
+            <option value="Patna">Patna Airport - [PAT]</option>
+            <option value="Port-Blair">Port-Blair Airport - [IXZ]</option>
+            <option value="Prayagraj">Prayagraj Airport - [IXD]</option>
+            <option value="Pune">Pune Airport - [PNQ]</option>
+            <option value="Raipur">Raipur Airport - [RPR]</option>
+            <option value="Rajahmundry">Rajahmundry Airport - [RJA]</option>
+            <option value="Rajkot">Rajkot Airport - [RAJ]</option>
+            <option value="Ranchi">Ranchi Airport - [IXR]</option>
+            <option value="Shillong">Shillong Airport - [SHL]</option>
+            <option value="Shirdi">Shirdi Airport - [SAG]</option>
+            <option value="Silchar">Silchar Airport - [IXS]</option>
+            <option value="Srinagar">Srinagar Airport - [SXR]</option>
+            <option value="Surat">Surat Airport - [STV]</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram Airport - [TRV]</option>
+            <option value="Tiruchirappalli">Tiruchirappalli Airport - [TRZ]</option>
+            <option value="Tirupati">Tirupati Airport - [TIR]</option>
+            <option value="Tuticorin">Tuticorin Airport - [TCR]</option>
+            <option value="Udaipur">Udaipur Airport - [UDR]</option>
+            <option value="Vadodara">Vadodara Airport - [BDQ]</option>
+            <option value="Varanasi">Varanasi Airport - [VNS]</option>
+            <option value="Vijayawada">Vijayawada Airport - [VGA]</option>
+            <option value="Visakhapatnam">Visakhapatnam Airport - [VTZ]</option>
+        </select>
+        <img class="to" src="https://i.pinimg.com/736x/fe/e5/80/fee580f68f80bb38ae6ca66494eb6d0c.jpg" alt="from">
+        <select name="Airport" id="FROM" required>
+            <option value="FROM"><em>*Select To Airport</em></option>
+            <option value="Agartala">Agartala Airport - [IXA]</option>
+            <option value="Agra">Agra Airport - [AGR]</option>
+            <option value="Ahmedabad">Ahmedabad Airport - [AMD]</option>
+            <option value="Aizawl">Aizawl Airport - [AJL]</option>
+            <option value="Amritsar">Amritsar Airport - [ATQ]</option>
+            <option value="Aurangabad">Aurangabad Airport - [IXU]</option>
+            <option value="Bagdogra">Bagdogra Airport - [IXB]</option>
+            <option value="Bareilly">Bareilly Airport - [BEK]</option>
+            <option value="BPM">Begumpet Airport - BPM</option>
+            <option value="Belagavi">Belagavi Airport - [IXG]</option>
+            <option value="Bengaluru">Bengaluru Airport - [BLR]</option>
+            <option value="Bhopal">Bhopal Airport - [BHO]</option>
+            <option value="Bhubaneswar">Bhubaneswar Airport - [BBI]</option>
+            <option value="Chandigarh">Chandigarh Airport - [IXC]</option>
+            <option value="Chennai">Chennai Airport - [MAA]</option>
+            <option value="Coimbatore">Coimbatore Airport - [CJB]</option>
+            <option value="Darbhanga">Darbhanga Airport - [DBR]</option>
+            <option value="Dehradun">Dehradun Airport - [DED]</option>
+            <option value="Delhi">Delhi Airport - [DEL]</option>
+            <option value="Deoghar">Deoghar Airport - [DGH]</option>
+            <option value="Dibrugarh">Dibrugarh Airport - [DIB]</option>
+            <option value="Dimapur">Dimapur Airport - [DMU]</option>
+            <option value="Durgapur">Durgapur Airport - [RDP]</option>
+            <option value="NEW Gaya">NEW Gaya Airport - [GAY]</option>
+            <option value="Goa">Goa Airport - [GOI]</option>
+            <option value="Gorakhpur">Gorakhpur Airport - [GOP]</option>
+            <option value="Guwahati">Guwahati Airport - [GAU]</option>
+            <option value="Gwalior">Gwalior Airport - [GWL]</option>
+            <option value="Hubli">Hubli Airport - [HBX]</option>
+            <option value="Hyderabad">Hyderabad Airport - [HYD]</option>
+            <option value="Imphal">Imphal Airport - [IMF]</option>
+            <option value="Indore">Indore Airport - [IDR]</option>
+            <option value="Itanagar">Itanagar Airport - [HGI]</option>
+            <option value="Jabalpur">Jabalpur Airport - [JLR]</option>
+            <option value="Jaipur">Jaipur Airport - [JAI]</option>
+            <option value="Jammu">Jammu Airport - [IXJ]</option>
+            <option value="Jodhpur">Jodhpur Airport - [JDH]</option>
+            <option value="Jorhat">Jorhat Airport - [JRH]</option>
+            <option value="Kadapa">Kadapa Airport - [CDP]</option>
+            <option value="Kannur">Kannur Airport - [CNN]</option>
+            <option value="NEW Kanpur">NEW Kanpur Airport - [KNU]</option>
+            <option value="Kochi">Kochi Airport - [COK]</option>
+            <option value="Kolhapur">Kolhapur Airport - [KLH]</option>
+            <option value="Kolkata">Kolkata Airport - [CCU]</option>
+            <option value="Kozhikode">Kozhikode Airport - [CCJ]</option>
+            <option value="Kurnool">Kurnool Airport - [KJB]</option>
+            <option value="Leh">Leh Airport - [IXL]</option>
+            <option value="Lucknow">Lucknow Airport - [LKO]</option>
+            <option value="Madurai">Madurai Airport - [IXM]</option>
+            <option value="Mangaluru">Mangaluru Airport - [IXE]</option>
+            <option value="Mumbai">Mumbai Airport - [BOM]</option>
+            <option value="Mysuru">Mysuru Airport - [MYQ]</option>
+            <option value="Nagpur">Nagpur Airport - [NAG]</option>
+            <option value="North Goa">North Goa Airport - [GOX]</option>
+            <option value="NEW Pantnagar">NEW Pantnagar Airport - [PGH]</option>
+            <option value="Patna">Patna Airport - [PAT]</option>
+            <option value="Port-Blair">Port-Blair Airport - [IXZ]</option>
+            <option value="Prayagraj">Prayagraj Airport - [IXD]</option>
+            <option value="Pune">Pune Airport - [PNQ]</option>
+            <option value="Raipur">Raipur Airport - [RPR]</option>
+            <option value="Rajahmundry">Rajahmundry Airport - [RJA]</option>
+            <option value="Rajkot">Rajkot Airport - [RAJ]</option>
+            <option value="Ranchi">Ranchi Airport - [IXR]</option>
+            <option value="Shillong">Shillong Airport - [SHL]</option>
+            <option value="Shirdi">Shirdi Airport - [SAG]</option>
+            <option value="Silchar">Silchar Airport - [IXS]</option>
+            <option value="Srinagar">Srinagar Airport - [SXR]</option>
+            <option value="Surat">Surat Airport - [STV]</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram Airport - [TRV]</option>
+            <option value="Tiruchirappalli">Tiruchirappalli Airport - [TRZ]</option>
+            <option value="Tirupati">Tirupati Airport - [TIR]</option>
+            <option value="Tuticorin">Tuticorin Airport - [TCR]</option>
+            <option value="Udaipur">Udaipur Airport - [UDR]</option>
+            <option value="Vadodara">Vadodara Airport - [BDQ]</option>
+            <option value="Varanasi">Varanasi Airport - [VNS]</option>
+            <option value="Vijayawada">Vijayawada Airport - [VGA]</option>
+            <option value="Visakhapatnam">Visakhapatnam Airport - [VTZ]</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHT-7y4oJuLUTCH-LvlDXvHnCwi96nduI-hCeqSyULrCf9IToqF8lJLAL&s=10">
+        <select name="class" class="room" required>
+            <option value="Select Class">*Select Class</option>
+            <option value="Economy">Economy</option>
+            <option value="Premium Economy">Premium Economy</option>
+            <option value="Bussiness">Bussiness</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3Bleji-ddCBxzqiZ0pFPVFKmV6K9yZc-dQ&usqp=CAU">
+        <select name="class" class="room" required>
+            <option value="Select Class">*Select Trip Mode</option>
+            <option value="Economy">One Way</option>
+            <option value="Premium Economy">Round Trip</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_VHM8mZdBPQhXLDs-zy4ZEGg_ptKhKIkrg&usqp=CAU">
+        <select class="room" required>
+            <option value="*Select Airways">*Select Airways</option>
+            <option value="Air India">Air India</option>
+            <option value="Air India Express">Air India Express</option>
+            <option value="Akasa Air">Akasa Air</option>
+            <option value="Go First">Go First</option>
+            <option value="IndiGo">IndiGo</option>
+            <option value="SpiceJet">SpiceJet</option>
+            <option value="Vistara">Vistara</option>
+        </select>
+        <br>
+        <br>
+        <button class="room" onclick="fare()">Search Fare</button>
+    </div>
+    <br>
+    <div class="airway2">
+        <h3><em>Co-Powered By Indian Most trusted</em></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <i><b>Indigo Airways</b></i>
+        <img class="da" src="https://airhex.com/images/airline-logos/alt/indigo.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://airhex.com/images/airline-logos/alt/vistara.png">
+        <br>
+        <i><b>Vistara Airways</b></i>
+        <br><br><br>
+        <img class="da2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHHwsTvgn2CYGxlYe6-7vm75bSmYsb8PZtA&usqp=CAU">
+        <br>
+        <b><i>Air India Airways</i></b>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="da2" src="https://airhex.com/images/airline-logos/alt/go-first.png">
+        <br>
+        <i><b>Go First Airways </b></i>
+        <br>
+        <br>
+        <img class="da1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjfxB8Y-O8nHTnd1cylHIGzukW4CR-irKeQ&usqp=CAU">
+        <br>
+        <br>
+        <br>
+        <i><b>Air India Express Airways</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://logos-world.net/wp-content/uploads/2023/01/SpiceJet-Logo.png">
+        <br>
+        <i><b>SpiceJet Airways</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Akasa_Air_logo_with_slogan.png">
+        <br>
+        <i><b>Akasa Air Airways</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://upload.wikimedia.org/wikipedia/en/0/08/Kingfisher_beer_logo.png">
+        <br>
+        <br>
+        <i><b>Kingfisher Airways</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3><i>Our Most trusted Cargo </i></h3>
+        <br>
+        <br>
+        <img class="da1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeBELPcZNw0S_V5VvXmuFCYXjEL2qwBzuKTQ&usqp=CAU">
+        <br>
+        <i><b>Blue Dart Aviation </b></i>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0hN_roX54DRoPOEVMrOqxdGfeX0pNEM6tuw&usqp=CAU">
+        <br>
+        <i><b>Smart Kargo Aviation</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR76nlBWJxi9ejMIS3T2Ygd4RICcHhPDruBWQ&usqp=CAU">
+        <br>
+        <i><b>QuickJet Aviation</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="da1" src="https://upload.wikimedia.org/wikipedia/en/7/7b/Pradhaan_Air_Express_Logo.png">
+        <br>
+        <i><b>Pradhaan Express Aviation</b></i>
+    </div>
+    <br>
+    <div class="panel">
+        <h3><em>International Selector Mode</em></h3>
+        <br>
+        <br>
+        <img class="from" src="https://i.pinimg.com/736x/fe/e5/80/fee580f68f80bb38ae6ca66494eb6d0c.jpg" alt="from">
+        <select id="FROM">
+            <option value="*Select From Airport">*Select From Airport</option>
+            <option value="AMD">Ahmedabad International ~ AMD</option>
+            <option value="ATQ">Amritsar International ~ ATQ</option>
+            <option value="BLR">Bengaluru International ~ BLR</option>
+            <option value="CCJ">Calicut International ~ CCJ</option>
+            <option value="MAA">Chennai International ~ MAA</option>
+            <option value="COK">Cochin International ~ COK</option>
+            <option value="DEL">Delhi International ~ DEL</option>
+            <option value="GOI">Goa International ~ GOI</option>
+            <option value="GAU">Guwahati International ~ GAU</option>
+            <option value="HYD">Hyderabad International ~ HYD</option>
+            <option value="JAI">Jaipur International ~ JAI</option>
+            <option value="CCU">Kolkata International ~ CCU</option>
+            <option value="BOM">Mumbai International ~ BOM</option>
+            <option value="NAG">Nagpur International ~ NAG</option>
+            <option value="IXZ">Port Blair International ~ IXZ</option>
+            <option value="SXR">Srinagar International ~ SXR</option>
+        </select>
+        <img class="to" src="https://i.pinimg.com/736x/fe/e5/80/fee580f68f80bb38ae6ca66494eb6d0c.jpg" alt="from">
+        <select id="FROM">
+            <option value="*Select To Airport">*Select To Airport</option>
+            <option value="ADL">Adelaide International ~ ADL</option>
+            <option value="AMS">Amsterdam International ~ AMS</option>
+            <option value="ATL">Atlanta International ~ ATL</option>
+            <option value="BKK">Bangkok International ~ BKK</option>
+            <option value="BCN">Barcelona International ~ BCN</option>
+            <option value="BEG">Belgrade International ~ BEG</option>
+            <option value="CNF">Belo Horizonte International ~ CNF</option>
+            <option value="BOG">Bogotá International ~ BOG</option>
+            <option value="BNE">Brisbane International ~ BNE</option>
+            <option value="EZE">Buenos Aires International ~ EZE</option>
+            <option value="CBR">Canberra International ~ CBR</option>
+            <option value="CCS">Caracas International ~ CCS</option>
+            <option value="ORD">Chicago International ~ ORD</option>
+            <option value="DFW">Dallas International ~ DFW</option>
+            <option value="DEL">Delhi International ~ DEL</option>
+            <option value="DEN">Denver International ~ DEN</option>
+            <option value="DXB">Dubai International ~ DXB</option>
+            <option value="FRA">Frankfurt International ~ FRA</option>
+            <option value="GIG">Rio de Janeiro International ~ GIG</option>
+            <option value="GRU">São Paulo International ~ GRU</option>
+            <option value="HND">Tokyo International ~ HND</option>
+            <option value="HKG">Hong Kong International ~ HKG</option>
+            <option value="ICN">Seoul International ~ ICN</option>
+            <option value="IST">Istanbul International ~ IST</option>
+            <option value="JFK">New York International ~ JFK</option>
+            <option value="KUL">Kuala Lumpur International ~ KUL</option>
+            <option value="LAX">Los Angeles International ~ LAX</option>
+            <option value="LHR">London International ~ LHR</option>
+            <option value="LIM">Lima International ~ LIM</option>
+            <option value="MAD">Madrid International ~ MAD</option>
+            <option value="MEX">Mexico City International ~ MEX</option>
+            <option value="MIA">Miami International ~ MIA</option>
+            <option value="MUC">Munich International ~ MUC</option>
+            <option value="NBO">Nairobi International ~ NBO</option>
+            <option value="NSN">Nelson International ~ NSN</option>
+            <option value="ORD">Chicago International ~ ORD</option>
+            <option value="CDG">Paris International ~ CDG</option>
+            <option value="PER">Perth International ~ PER</option>
+            <option value="PVG">Shanghai International ~ PVG</option>
+            <option value="UIO">Quito International ~ UIO</option>
+            <option value="SCL">Santiago International ~ SCL</option>
+            <option value="SIN">Singapore International ~ SIN</option>
+            <option value="SVO">Moscow International ~ SVO</option>
+            <option value="SYD">Sydney International ~ SYD</option>
+            <option value="HND">Tokyo International ~ HND</option>
+            <option value="UIO">Quito International ~ UIO</option>
+            <option value="YVR">Vancouver International ~ YVR</option>
+            <option value="YYZ">Toronto International ~ YYZ</option>
+            <option value="ZRH">Zurich International ~ ZRH</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHT-7y4oJuLUTCH-LvlDXvHnCwi96nduI-hCeqSyULrCf9IToqF8lJLAL&s=10">
+        <select name="class" class="room" required>
+            <option value="Select Class">*Select Class</option>
+            <option value="Economy">Economy</option>
+            <option value="Premium Economy">Premium Economy</option>
+            <option value="Bussiness">Bussiness</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3Bleji-ddCBxzqiZ0pFPVFKmV6K9yZc-dQ&usqp=CAU">
+        <select name="class" class="room" required>
+            <option value="Select Class">*Select Trip Mode</option>
+            <option value="Economy">One Way</option>
+            <option value="Premium Economy">Round Trip</option>
+        </select>
+        <img class="from" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_VHM8mZdBPQhXLDs-zy4ZEGg_ptKhKIkrg&usqp=CAU">
+        <select class="room" required>
+            <option value="*Select Airways">*Select Airways</option>
+            <option>Emirates Airlines</option>
+            <option>Singapore Airlines</option>
+            <option>Lufthansa Airlines</option>
+            <option>Air France Airlines</option>
+            <option>Ethiopian Airlines</option>
+            <option>British Airways Airlines</option>
+            <option>Qantas Airlines</option>
+            <option>Delta Airlines</option>
+            <option>American Airlines</option>
+            <option>Virgin Airlines</option>
+            <option>Air India Airlines</option>
+            <option>EgyptAir Airlines</option>
+            <option>Etihad Airways</option>
+            <option>JetStar Airlines</option>
+            <option>Avianca Airlines</option>
+            <option>Azul Brazilian Airlines</option>
+        </select>
+
+        <br>
+        <br>
+        <button class="room" onclick="fare()">Search Fare</button>
+
+
+    </div>
+    <br />
+    <br />
+    <div class="panel">
+        <h3><em>Our Official Patners </em></h3>
+        <br>
+        <img id="ia" src="https://1000logos.net/wp-content/uploads/2020/03/Emirates-Logo.png">
+        <br />
+        <i><b>Emirates Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ZzYgsuBk8pHwrU7wihg-6wl0Xhvs_8jAPyllLlVepv0lUL4&s">
+        <br>
+        <br>
+        <i><b>Singapore Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbzpa6O_SeaQVasVYM81pmlmmgQyRl5vkzw&usqp=CAU">
+        <br>
+        <i class="la"><b>Lufthansa Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__mxCuQvcL-gA9bpsypeTLaNNBc31VfFZvQ&usqp=CAU">
+        <br>
+        <i class="la"><b>Air France Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img id="ia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4da1fArDs30CP4FYxxPAfK-o-DvbfMwTQSw&usqp=CAU">
+        <br>
+        <br>
+
+        <i class="la"><b>Ethopian Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcxxkdo2hApsZNLoa18bskd2IKGh-jOsRvQ&usqp=CAU">
+        <br>
+        <br>
+        <i><b>British Airlines </b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBG-1dBnr5md8GpNsr-khzyO01PDS9Hp28Q&usqp=CAU">
+        <br>
+        <i><b>Qantas Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbORsOYKRhGwFEJHLg_WOuEZKbBT1pmvPYrw&usqp=CAU">
+        <br>
+        <i><b>Delta Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWww7Oeb2lDw2ToXFGnMHUgRf2gPhmEPhEe9HQ6VPn2BCdmLkFjCgTvs&s=10">
+        <br>
+        <br>
+        <i class="airl"><b>Air Asia Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX-oL8C-xJAgQs5R0C4bgD_NuIkg9v_2iarg&usqp=CAU">
+        <br />
+        <br>
+        <i> <b> American Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXbIbdYNlFU9_cef8L9-2ThEZDlDGUKWkXA&usqp=CAU">
+        <br>
+        <i><b>Virgin Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <br />
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS445aMLLrQ2_qcKnHAVDtPAB0gCMQyqlcHIw&usqp=CAU">
+        <br>
+        <i><b>EgyptAir Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://www.etihad.com/content/dam/eag/etihadairways/etihadcom/Global/seo/Facebook_og_image.png">
+        <br>
+        <i><b>Etihad Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzeYczkucZbEOod6276kB7cV1SdN53GhurnA&usqp=CAU">
+        <br>
+        <i><b>Avianca Airlines</b></i>
+        <br>
+        <br>
+        <br>
+        <img class="iaa" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3HQG7pZx92-tyduXchrk612uHSDvqlqxjZA&usqp=CAU">
+        <br>
+        <i><b>Azul Brazilian Airlines</b></i>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+
+    <footer class="footer">
+        <p>
+            All rights reserved ~ No copyrights©</p>
+    </footer>
+
+</body>
+
+</html>
